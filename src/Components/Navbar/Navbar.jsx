@@ -23,7 +23,7 @@ export default function Navbar() {
           <a href='https://github.com/MuhamedFouda?tab=repositories' target='_blank'><img src='/Github.png' alt='Github Image' /></a>
           <a href='https://www.linkedin.com/in/muhamedfouda/' target='_blank'><img src='/linked.png' alt='Linkedin Image' /></a>
           <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} target="_blank" style={{ textDecoration: "none" }}>
-          <img src='../../../public/w.png' alt='Whatsapp Image' />
+          <img src='/w.png' alt='Whatsapp Image' />
           </a>
         </div>
       </div>
