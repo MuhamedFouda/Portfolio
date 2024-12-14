@@ -49,7 +49,7 @@ export default function Services() {
                 </div>
                 <div className="title">
                     <h1> <motion.b whileHover={{ color: 'orange' }}>For Your</motion.b> Business </h1>
-                    <button> WHAT WE DO ?</button>
+                    <button> WHAT I DO </button>
                 </div>
             </motion.div>
             <motion.div className="listContainer" variants={variants}>
