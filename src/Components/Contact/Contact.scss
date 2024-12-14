@@ -1,0 +1,110 @@
+@import "../../App.scss";
+
+.contact {
+    height: 100vh;
+    max-width: 1336px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    @include mobile {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include mobile {
+            height: 50%;
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            margin-top: 20px;
+
+        }
+
+        h3 {
+            font-size: 100px;
+            line-height: 88px;
+            color: orange;
+            
+            @include mobile {
+                font-size: 26px;
+                line-height: 50px;
+            }
+        }
+
+        .item {
+            span {
+                font-weight: 300;
+            }
+        }
+    }
+
+    .formContainer {
+        flex: 1;
+        position: relative;
+
+        @include mobile {
+            height: 50%;
+        }
+
+        .phoneSvg {
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+            svg{
+                @include mobile {
+                    // display: none;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input,
+            textarea {
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+
+                @include mobile {
+                    padding: 10px;
+                }
+            }
+
+            button {
+                padding: 20px;
+                border: none;
+                background-color: orange;
+                cursor: pointer;
+                font-weight: 500;
+
+                @include mobile {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+@import "../../App.scss";
+
+.portfolio {
+    position: relative;
+    width: 100%;
+
+    .progress {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: orange;
+        font-size: 36px;
+
+        @include mobile {
+            padding-top: calc(100vh - 100px);
+            font-size: 24px;
+        }
+
+        h3 {
+
+        }
+
+        .progressBar {
+            width: 100%;
+            height: 10px;
+            background-color: white;
+        }
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .wrapper {
+            max-width: 1366px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 5rem;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 80px;
+                margin-top: 0rem;
+            }
+
+            .imgContainer {
+                flex: 1;
+                height: 50%;
+
+                @include mobile {
+                    width: 100%;
+                    max-height: 300px;
+                }
+
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                background-color: transparent;
+
+                @include mobile {
+                    object-fit: contain;
+                }
+            }
+
+            .textContainer {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 30px;
+
+                @include mobile {
+                    gap: 10px;
+                }
+
+                h3 {
+                    font-size: 72px;
+
+                    @include mobile {
+                        font-size: 25px;
+                        padding-left: 10px;
+                    }
+                }
+
+                p {
+                    color: gray;
+                    font-size: 20px;
+                    @include mobile {
+                        font-size: 15px;
+                        padding-left: 10px;
+                    }
+                }
+
+                button {
+                    width: 200px;
+                    border: none;
+                    background-color: orange;
+                    padding: 10px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    cursor: pointer;
+                    @include mobile {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
