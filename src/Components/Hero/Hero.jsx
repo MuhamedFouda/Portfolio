@@ -49,14 +49,14 @@ export default function Hero() {
                         <motion.button > <a href="#Portfolio">See the latest Works</a></motion.button>
                         <motion.button ><a href="#Contact">Contact Me</a></motion.button>
                     </motion.div>
-                    <motion.img variants={textVariants} animate="scrollButton" src="../../../public/scroll.png" alt="scroll_img" />
+                    <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="scroll_img" />
                 </motion.div>
             </div>
             <motion.div className="slidingtext" variants={slidingVariants} initial="initial" animate="animate">
                 Front-end Developer React.js
             </motion.div>
             <div className="imageContainer">
-                <img src="../../../public/4.png" alt='Developer Img' />
+                <img src="/4.png" alt='Developer Img' />
             </div>
         </div>
     )

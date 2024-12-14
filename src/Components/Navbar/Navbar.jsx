@@ -20,8 +20,8 @@ export default function Navbar() {
         <div className="social">
           <a href='https://www.facebook.com/memo.fouda59' target='_blank'><img src='/facebook.png' alt='Facebook Image' /></a>
           <a href='https://www.instagram.com/muhamad_fouda/' target='_blank'><img src='/instagram.png' alt='Instgram Image' /></a>
-          <a href='https://github.com/MuhamedFouda?tab=repositories' target='_blank'><img src='../../../public/Github.png' alt='Github Image' /></a>
-          <a href='https://www.linkedin.com/in/muhamedfouda/' target='_blank'><img src='../../../public/linked.png' alt='Linkedin Image' /></a>
+          <a href='https://github.com/MuhamedFouda?tab=repositories' target='_blank'><img src='/Github.png' alt='Github Image' /></a>
+          <a href='https://www.linkedin.com/in/muhamedfouda/' target='_blank'><img src='/linked.png' alt='Linkedin Image' /></a>
           <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} target="_blank" style={{ textDecoration: "none" }}>
           <img src='../../../public/w.png' alt='Whatsapp Image' />
           </a>
