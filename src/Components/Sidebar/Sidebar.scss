@@ -57,14 +57,16 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         position: fixed;
-        top: 25px;
+        top: 27px;
         left: 25px;
         background-color: transparent;
         border: none;
         cursor: pointer;
-        padding-top: .5rem;
+        // padding-top: .5rem;
         z-index: 10;
-        @include mobile {     
+        @include mobile { 
+            top: 30px;
+            left: 5px;    
         }
 
 

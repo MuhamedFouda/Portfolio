@@ -56,7 +56,7 @@ export default function Hero() {
                 Front-end Developer React.js
             </motion.div>
             <div className="imageContainer">
-                <img src="/4.png" alt='Developer Img' />
+                <img src="/4.png" loading="lazy" alt='Developer Img' />
             </div>
         </div>
     )

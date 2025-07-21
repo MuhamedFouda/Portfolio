@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    padding: 0px 10px;
 
     @include mobile {
         width: 100%;
@@ -29,7 +30,9 @@
             text-align: center;
             align-items: center;
             margin-top: 20px;
-
+        }
+        @include tablet{
+            padding-left: 10px;
         }
 
         h3 {
@@ -40,6 +43,10 @@
             @include mobile {
                 font-size: 26px;
                 line-height: 50px;
+            }
+            @include tablet{
+                font-size: 80px;
+                line-height: 68px;
             }
         }
 
@@ -56,6 +63,8 @@
 
         @include mobile {
             height: 50%;
+            width: 100%;
+            margin-bottom: 1rem;
         }
 
         .phoneSvg {
