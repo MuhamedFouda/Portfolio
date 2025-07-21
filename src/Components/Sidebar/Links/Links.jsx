@@ -21,7 +21,7 @@ export default function Links() {
       opacity:0,
     }
   }
-  const items=["HomePage","Services","Portfolio","Contact","About"]
+  const items=["Home","Services","Portfolio","Contact","About"]
   return (
     <motion.div className='links' variants={variants}>
       {items.map((item,i)=>{
